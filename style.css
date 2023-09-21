@@ -43,10 +43,6 @@ nav{
   font-size: 2.5rem;
   margin-top: 95px !important;
 }
-.left{
-  margin-left: 1000px;
-  margin-top: -30px;
-}
 .blur{
   filter: blur(180px);
   position: absolute;
@@ -57,13 +53,13 @@ nav{
   margin-top: 120px;
 }
 .img1 {
-  top: 1200;
+  top: 1100;
   left: 0;
   z-index: 1;
 }
 .img2 {
   position: absolute;
-  top: 1010;
+  top: 100;
   left: 0;
   z-index: 0;  
 }
