@@ -1,0 +1,70 @@
+body{
+  background-color: #150D26;
+}
+
+span{
+  color: #D434FE;
+}
+
+nav{
+  background-color:  #150E28;
+}
+
+.gradient {
+  background-image: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+.myfont{
+  font-size: 45px;
+}
+.margin{
+  margin-left: 16rem;
+} 
+.img-container {
+  position: relative;
+}
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 500px;
+}
+
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.line{
+  margin-top: 2.9rem;
+}
+.intro{
+  font-size: 2.5rem;
+  margin-top: 95px !important;
+}
+.left{
+  margin-left: 1000px;
+  margin-top: -30px;
+}
+.blur{
+  filter: blur(180px);
+  position: absolute;
+   background: linear-gradient(0deg, #140D27, #140D27),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+}
+.mtop{
+  margin-top: 120px;
+}
+.img1 {
+  top: 1200;
+  left: 0;
+  z-index: 1;
+}
+.img2 {
+  position: absolute;
+  top: 1010;
+  left: 0;
+  z-index: 0;  
+}
+
