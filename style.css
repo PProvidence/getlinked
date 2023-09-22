@@ -41,6 +41,7 @@ nav{
 }
 .line1{
   color: #D434FE;
+  margin-top: 0;
 }
 .intro{
   font-size: 2.5rem;
@@ -91,4 +92,16 @@ nav{
 .span{
   margin-top: -6px;
   /* margin-left: 100px; */
+}
+.grayimg{
+  margin-top: 160px;
+}
+.navbar-toggler{
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .first-cont img{
+    display: none;
+  }
 }
