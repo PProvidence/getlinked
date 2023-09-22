@@ -101,7 +101,30 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
-  .first-cont img{
+  .first-cont{
+    width: fit-content;
+  }
+  .first-cont .img{
     display: none;
+  }
+  .landtext{
+    font-size: 15px;
+  }
+  .img-container {
+    top: 0;
+  }
+  .image1 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 500px;
+  }
+  
+  .image2 {
+    /* position: absolute; */
+    top: -100px;
+    left: 0;
+    z-index: 0;
   }
 }
