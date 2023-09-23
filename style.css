@@ -14,7 +14,7 @@ nav{
   background-image: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
 }
 .myfont{
-  font-size: 40px;
+  font-weight: 700 !important;
 }
 .margin{
   margin-left: 16rem;
@@ -38,6 +38,9 @@ nav{
 }
 .line{
   margin-top: -0px;
+}
+.line1{
+  color: #D434FE;
 }
 .intro{
   font-size: 2.5rem;
@@ -85,3 +88,7 @@ nav{
   margin-top: 10px;
 }
 
+.span{
+  margin-top: -6px;
+  /* margin-left: 100px; */
+}
