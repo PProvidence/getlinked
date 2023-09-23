@@ -41,6 +41,7 @@ nav{
 }
 .line1{
   color: #D434FE;
+  margin-top: 0;
 }
 .intro{
   font-size: 2.5rem;
@@ -92,36 +93,38 @@ nav{
   margin-top: -6px;
   /* margin-left: 100px; */
 }
-
-*{
-font-family: 'Montserrat', sans-serif;
+.grayimg{
+  margin-top: 160px;
+}
+.navbar-toggler{
+  color: #FFFFFF;
 }
 
-.clashdisplay{
-font-family: 'Clash Display', sans-serif;
-}
-.fs-14{
-  font-size: 14px;
-}
-.fs-18{
-  font-size: 18px;
-}
-
-@media screen and (max-width: 576px){
-  .fs-12{
-    font-size: 12px;
+@media only screen and (max-width: 600px) {
+  .first-cont{
+    width: fit-content;
   }
-  .partners-text{
-    max-width: 100% !important
+  .first-cont .img{
+    display: none;
   }
-  .fs-20{
-    font-size: 20px !important
+  .landtext{
+    font-size: 15px;
   }
-}
-.partners-section{
-
-}
-
-.partners-text{
-  max-width: 40%
+  .img-container {
+    top: 0;
+  }
+  .image1 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 500px;
+  }
+  
+  .image2 {
+    /* position: absolute; */
+    top: -100px;
+    left: 0;
+    z-index: 0;
+  }
 }
