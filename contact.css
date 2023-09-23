@@ -1,0 +1,130 @@
+        /* Custom purple background */
+        body {
+            background-image: url('../img/Contact-bg.png'); /* Replace 'your-background-image.jpg' with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* background-color: #150E28; */
+            font-family: 'Clash', sans-serif; 
+            color: #fff;
+            /* min-height: 100vh; */
+        }
+
+        /* Center the form on the page */
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            color: #000;
+           width: 100%; 
+           height: 100%;
+           background: rgba(255, 255, 255, 0.03); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+           border-radius: 12px
+        }
+
+        .pri-col {
+            color: #D434FE;
+        }
+
+        .pri-bg{
+            background: linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%);
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .fs-24 {
+            font-size: 24px;
+        }
+
+        .social-icons img {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #fff; /* Purple color */
+        }
+
+        .form-control {
+          width: 100%; height: 100%;
+          background: rgba(255, 255, 255, 0.03); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 4px;
+          border: 1px white solid
+
+        }
+
+         textarea {
+            resize: none;
+        }
+
+        ::placeholder {
+            color: white !important;
+        }
+
+        .btn-custom {
+            color: white;
+            text-align: center;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Center the button */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        
+            
+        }
+
+         /* Custom CSS for responsiveness */
+         @media (max-width: 320px) {
+          
+
+            .container {
+                padding: 10px; /* Reduce container padding for smaller screens */
+            }
+            .contact-form {
+                margin-top: 10px; /* Adjust form margin on smaller screens */
+            }
+            .btn-container {
+                text-align: center; /* Center the button on smaller screens */
+            }
+            /* Reduce placeholder font size for smaller screens */
+            input[type="text"]::placeholder,
+            input[type="email"]::placeholder,
+            textarea::placeholder {
+                font-size: 12px;
+
+
+            }
+
+            .social-container {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-image: url('../img/contact-mobile-bg.png');
+            }
+
+            .contact-form {
+                margin-top: 30px; 
+            }
+            .contact-info {
+                display: none; 
+            }
+
+            .mobile-form {
+                display: none; /* Hide the mobile form on screens <= 768px */
+            }
+
+        
+        }
+
+       
