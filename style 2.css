@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=DM+Sans&family=Lato&family=Lora:ital,wght@1,500&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&family=Poppins&family=Roboto:wght@100;400;500&family=Space+Grotesk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #190e2f;
+}
+
+.time{
+    font-weight: 600;
+}
+h6{
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.timelinegroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* line */
+
+.line-one{
+    width: 4px;
+    height: 137px;
+    background: #D434FE;
+}
+.line{
+    height: 68px;
+    width: 4px;
+    background: #D434FE;
+}
+.cricle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* background: #D434FE; */
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+
+}
+/*  */
+.cricle p{
+    text-align: center;
+}
+h5{
+    color: #D434FE;
+
+}
+.nov-1{
+    margin-top: 60px;
+}
+.nov-2{
+    margin-top: 50px;
+}
+.nov-3{
+    margin-top: 70px;
+}
+.nov-4{
+    margin-top: 90px;
+
+}
+.nov-5{
+    margin-top: 60px;
+
+}
+.thirdcontainer {
+    top: 150px;
+    position: relative;
+}
+.tag-one{
+    margin-top: 80px;
+}
+.team-1{
+    margin-top: 60px;
+
+}
+.star-one{
+    margin-left: 150px;
+}
+
+.team-2{
+    margin-top: 64px;
+   
+}
+.team-3{
+    margin-top: 60px;
+
+}
+.h6{
+    font-size: 12px !important;
+}
+.team-4{
+    margin-top: 40px;
+
+}
+.team-5{
+    margin-top: 60px;
+}
+@media only screen and (max-width: 991px) { 
+.timelinegroup{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.line-container{
+    left: 220px;
+    top: 300px;
+    position:absolute;
+}
+.textEnd{
+    text-align: left !important;
+}
+.cricle{
+    text-align: center;
+
+}
+.nov-1{
+    margin-top: 30px;
+}
+.nov-2{
+    margin-top: 20px;
+}
+.nov-3{
+    margin-top: 20px;
+}
+.nov-4{
+    margin-top: 20px;
+
+}
+.nov-5{
+    margin-top: 20px;
+
+}
+.team-1{
+    margin-top: 60px;
+
+}
+
+
+.team-2{
+    margin-top: 20px;
+   
+}
+.team-3{
+    margin-top: 20px;
+
+}
+.h6{
+    font-size: 12px !important;
+}
+.team-4{
+    margin-top: 20px;
+
+}
+.team-5{
+    margin-top:20px;
+}
+.line-container{
+    left: 220px;
+    top: 280px;
+    position:absolute;
+}
+.line-one{
+    width: 2px;
+    height: 100px;
+    background: #D434FE;
+
+}
+.line-one-r{
+    width: 2px;
+    height: 100px;
+    background: #D434FE;
+    
+}
+
+.thirdcontainer {
+    top: 20px;
+    position: relative;
+}
+.switch-ends{
+        top: 260px;
+        position: relative;
+}
+.switch-ends-date{
+    top: 280px;
+        position: relative;
+
+}
+.hack-announce{
+    top: 30px;
+    position: relative;
+}
+.switch-rep{
+    bottom: 280px;
+        position: relative;
+}
+.switch-rep-date{
+    bottom: 50px;
+        position: relative;
+}
+.officallyb-switch{
+    top: 500px;
+        position: relative;
+}
+.timelines{
+    padding: 20px;
+}
+.announce-switch{
+    bottom:  50px;
+    position: relative;
+
+}
+.announce-switch-date{
+    top: 280px;
+    position: relative;
+}
+.officallyb-switch-date{
+    top: 280px;
+    position: relative;
+}
+.demo-switch{
+    top: 150px;
+    position: relative;
+}
+.demo-switch-date{
+    top: 320px;
+    position: relative;
+}
+}
+
+@media only screen and (max-width: 767px) { 
+    .line-container{
+        left: 140px;
+        top: 280px;
+        position:absolute;
+    }
+    .star-one{
+        margin-left: 0px;
+    }
+   
+}
+@media only screen and (max-width: 575px) { 
+    .line-container{
+        left: 46px;
+        top: 280px;
+        position:absolute;
+    }
+}
+@media only screen and (max-width: 320px) { 
+.time-h6{
+    font-size: 12px;
+}
+.line-one{
+    display: none;
+}
+.line{
+    display: none;
+    
+}
+.cricle{
+    display: none;
+    
+}
+.cricle p{
+    display: none;
+}
+.time-h6 {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+.hack-announce{
+    bottom:100px !important;
+    position: relative;
+}
+/* .announce-switch{
+    top: 50px;
+    position: relative;
+} */
+}
