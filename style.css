@@ -100,10 +100,13 @@ font-family: 'Montserrat', sans-serif;
 .clashdisplay{
 font-family: 'Clash Display', sans-serif;
 }
-
+.fs-14{
+  font-size: 14px;
+}
 .fs-18{
   font-size: 18px;
 }
+
 @media screen and (max-width: 576px){
   .fs-12{
     font-size: 12px;
@@ -120,5 +123,5 @@ font-family: 'Clash Display', sans-serif;
 }
 
 .partners-text{
-  max-width: 50%
+  max-width: 40%
 }
