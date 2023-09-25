@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Clash&display=swap" rel="stylesheet">
     <!-- Font Awesome CSS from CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="form.css">
     <style>
        
     </style>
@@ -17,43 +17,62 @@
 <body>
     <div class="container mb-5">
         <div class="row mt-md-5">
-            <!-- Registration information and social icons -->
+            <!-- Registration information-->
             <div class="col-md-6  registration-info">
                 <h2 class="pri-col ">Register</h2>
                 <div class="fs-16">
-                    <p>Registration Information</p>
-                    <p>Fill out the form below to register.</p>
+                    <img src="./img/registerImage.png" alt="Registration Image">
                 </div>
-                <!-- Remove the social icons section for registration -->
+   
             </div>
 
             <!-- Registration form on the right -->
             <div class="col-md-6 ">
-                <form class="contact-form p-100">
+                <form class="register-form p-100" action="registration_process.php" method="POST">
                     <h2 class="pri-col fs-16 mb-3">Registration Form</h2>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="firstName" name="firstName" 
-                        placeholder="First Name" required>
+                        <label for="teamName">Team's Name:</label>
+                        <input type="text" class="form-control" id="teamName" name="teamName" 
+                        placeholder="Enter Team's Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control my-3" id="lastName" name="lastName" 
-                        placeholder="Last Name" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control my-3" id="phone" name="phone" 
+                        placeholder="Enter Phone Number" required>
                     </div>
                     <div class="form-group">
+                        <label for="email">Email:</label>
                         <input type="email" class="form-control my-3" id="email" name="email" 
-                        placeholder="Email" required>
+                        placeholder="Enter Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control my-3" id="password" name="password" 
-                        placeholder="Password" required>
+                        <label for="projectTopic">Project Topic:</label>
+                        <input type="text" class="form-control my-3" id="projectTopic" name="projectTopic" 
+                        placeholder="Enter Project Topic" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-control my-3" id="category" name="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="Category 1">Category 1</option>
+                            <option value="Category 2">Category 2</option>
+                            <option value="Category 3">Category 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="groupSize">Group Size:</label>
+                        <input type="number" class="form-control my-3" id="groupSize" name="groupSize" 
+                        placeholder="Enter Group Size" required>
                     </div>
                     <div class="btn-container">
                         <button type="submit" class="btn btn-custom pri-bg text-white mt-3">Register</button>
                     </div>
                 </form>
+                
+                
+                
             </div>
  
-            <!-- Remove the social icons section for registration -->
         </div>
     </div>
 
