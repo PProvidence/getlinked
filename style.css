@@ -1,12 +1,12 @@
 body{
   background-color: #150D26;
 }
-
-span{
+ 
+.purple ,span{
   color: #D434FE;
 }
 
-nav{
+.dark-bg{
   background-color:  #150E28;
 }
 
@@ -110,6 +110,9 @@ nav{
   .landtext{
     font-size: 15px;
   }
+  .fs-sm-18{
+    font-size: 18px !important;
+  }
   .img-container {
     top: 0;
   }
@@ -163,6 +166,7 @@ nav{
     .fs-16{
       font-size: 16px;
     }
+    
     .w-70{
       width: 100%;
     }
@@ -209,4 +213,10 @@ a:hover{
 }
 a{
   color: white;
+}
+.nav-link.active{
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
