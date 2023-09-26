@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (phoneNumber.trim() === '') {
             isValid = false;
             alert("Please enter a phone number.");
-        } else if (!/^\d{10}$/.test(phoneNumber)) {
+        } else if (!/^\d{11}$/.test(phoneNumber)) {
             isValid = false;
-            alert("Please enter a valid 10-digit phone number.");
+            alert("Please enter a valid 11-digit phone number.");
         }
 
         // Validate email
