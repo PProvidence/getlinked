@@ -1,60 +1,83 @@
-// Get a reference to the form element
-const form = document.getElementById("registration-form");
+document.addEventListener('DOMContentLoaded', function () {
+    // Get a reference to the form element
+    const form = document.getElementById("registration-form");
 
-// Add a submit event listener to the form
-form.addEventListener("submit", function(event) {
-    // Prevent the form from submitting by default
-    event.preventDefault();
+    // Add a submit event listener to the form
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
 
-    // Get the values entered by the user
-    const teamName = document.getElementById("teamName").value.trim();
-    const phoneNumber = document.getElementById("phoneNumber").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const projectTopic = document.getElementById("projectTopic").value.trim();
-    const category = document.getElementById("category").value;
-    const groupSize = document.getElementById("groupSize").value;
+        // Get the form data
+        const formData = new FormData(form);
 
-    // Perform validation checks
-    let isValid = true;
+        // Perform validation checks
+        let isValid = true;
 
-    // Validate teamName
-    if (teamName === "") {
-        isValid = false;
-        alert("Please enter the team's name.");
-    }
+        // Validate teamName
+        const teamName = formData.get('teamName');
+        if (teamName.trim() === '') {
+            isValid = false;
+            alert("Please enter the team's name.");
+        }
 
-    // Validate phoneNumber
-    if (phoneNumber === "") {
-        isValid = false;
-        alert("Please enter a phone number.");
-    } else if (!/^\d{10}$/.test(phoneNumber)) {
-        isValid = false;
-        alert("Please enter a valid 10-digit phone number.");
-    }
+        // Validate phoneNumber
+        const phoneNumber = formData.get('phoneNumber');
+        if (phoneNumber.trim() === '') {
+            isValid = false;
+            alert("Please enter a phone number.");
+        } else if (!/^\d{10}$/.test(phoneNumber)) {
+            isValid = false;
+            alert("Please enter a valid 10-digit phone number.");
+        }
 
-    // Validate email
-    if (email === "") {
-        isValid = false;
-        alert("Please enter an email address.");
-    } else if (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(email)) {
-        isValid = false;
-        alert("Please enter a valid email address.");
-    }
+        // Validate email
+        const email = formData.get('email');
+        if (email.trim() === '') {
+            isValid = false;
+            alert("Please enter an email address.");
+        } else if (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(email)) {
+            isValid = false;
+            alert("Please enter a valid email address.");
+        }
 
-    // Validate projectTopic
-    if (projectTopic === "") {
-        isValid = false;
-        alert("Please enter a project topic.");
-    }
+        // Validate projectTopic
+        const projectTopic = formData.get('projectTopic');
+        if (projectTopic.trim() === '') {
+            isValid = false;
+            alert("Please enter a project topic.");
+        }
 
-    // Validate category and groupSize (assuming you don't want the default "Select" values)
-    if (category === "" || groupSize === "") {
-        isValid = false;
-        alert("Please select a category and group size.");
-    }
+        // Validate category and groupSize
+        const category = formData.get('category');
+        const groupSize = formData.get('groupSize');
+        if (category === '' || groupSize === '') {
+            isValid = false;
+            alert("Please select a category and group size.");
+        }
 
-    // If all checks pass, submit the form
-    if (isValid) {
-        form.submit();
-    }
+        // If all checks pass, submit the form data to the API
+        if (isValid) {
+            // Define the API endpoint URL
+            const apiUrl = 'https://get-linked-pre-hack.vercel.app/register.html';
+
+            // Make a POST request to the API
+            fetch(apiUrl, {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the API response (you can display a success message or perform other actions)
+                console.log(data); // Log the response for debugging
+                alert('Form submitted successfully!');
+            })
+            .catch(error => {
+                // Handle errors (display an error message or perform other actions)
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            });
+        } else {
+            // If the form is not valid, display an error message or take other actions as needed.
+            alert('Please fill out all required fields correctly.');
+        }
+    });
 });
