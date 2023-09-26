@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if the form is valid
         if (form.checkValidity()) {
             // Define the API endpoint URL (replace with your actual API URL)
-            const apiUrl = '{{baseUrl}}/hackathon/contact-form';
+            const apiUrl = 'https://getlinked-pre-hack.vercel.app/contact.html';
 
             // Make a POST request to the API
             fetch(apiUrl, {

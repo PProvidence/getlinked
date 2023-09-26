@@ -1,0 +1,14 @@
+label {
+    color: white !important; 
+    font-size: 16px !important; 
+}
+
+::placeholder {
+    color: grey !important;
+    font-size: 16px !important;
+}
+
+select option {
+    background-color: #333 !important; /* Dark background color */
+    color: #fff !important; /* White text color */
+}

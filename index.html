@@ -7,30 +7,34 @@
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=montserrat@500,1,900,700,701,801,200,401,301,400,601,100,101,2,201,800,300,600,901,501&display=swap" rel="stylesheet"></link>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style2.css">
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-md px-5">
+  <nav class="navbar navbar-expand-lg dark-bg  px-2 pt-5 px-md-5">
     <div class="container-fluid">
-      <a class="navbar-brand fs-1 fw-bold text-white" href="#">get<span>linked</span></a>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
+      <a class="navbar-brand fs-1 clashdisplay fw-bold text-white" href="#">get<span>linked</span></a>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-white">
+          <img src="./img/mobile-nav-menu.svg" alt="nav menubar">
+        </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item mx-3">
-            <a class="nav-link active text-white fs-5 fw-medium" aria-current="page" href="#timeline">Timeline</a>
+      <div class="collapse navbar-collapse mx-3 mx-lg-0" id="navbarText">
+        <ul class="navbar-nav ms-auto fs-sm-18 fs-16 fw-medium fw-md-normal text-white me-5 my-3 my-lg-0  align-items-lg-center">
+          <li class="nav-item mx-0 mx-md-2">
+            <a class="nav-link text-white" href="#">Timeline</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link text-white fs-5" href="#">Overview</a>
+          <li class="nav-item mx-0 mx-md-2">
+            <a class="nav-link text-white" href="#">Overview</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link text-white fs-5" href="#">FAQs</a>
+          <li class="nav-item mx-0 mx-md-2">
+            <a class="nav-link text-white" href="#FAQs">FAQs</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link text-white fs-5" href="contact.html">Contact</a>
+          <li class="nav-item mx-0 mx-md-2">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
           </li>
-          <button class="gradient px-5 rounded text-white border border-0">Register</button>
         </ul>
+        <button class="gradient px-5 py-3 ms-lg-5 mx-0 mx-md-2 rounded-1 text-white border border-0">Register</button>
       </div>
     </div>
   </nav>
@@ -38,7 +42,7 @@
   <div class="d-flex justify-content-between px-5 first-cont">
     <img src="./img/star (1).png" alt="" class="img-fluid img" width="50" height="50">
     <div>
-      <h1 class="text-white landtext">Igniting a Revolution in HR Innovation</h1>
+      <h1 class="text-white fs-36 fs-16 fst-italic fw-bold landtext">Igniting a Revolution in HR Innovation</h1>
       <img src="./img/Vector 4.png" alt="" class="img-fluid float-end top-0">
     </div>
   </div>
@@ -50,7 +54,7 @@
         <div class="">
           <div class="blur"></div>
           <div class="d-flex sm-d-flex">
-            <h2 class="text-white fw-bold myfont w-50 gap-3 fs-1">getlinked Tech<br>Hackathon <span>1.0</span></h2>
+            <h2 class="text-white clashdisplay fw-bold myfont w-50 gap-3">getlinked Tech<br>Hackathon <span>1.0</span></h2>
             <img src="./img/chain-9365116-7621444.png" alt="" width="120" height="100" class="img-fluid">
             <img src="./img/1f4a5.png" alt="" width="120" height="100" class="img-fluid">
           </div>
@@ -152,11 +156,12 @@
   <hr class="text-white">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div id="FAQs" class="col-sm-6">
         <img src="./img/starpurple.png" alt="" class="img-fluid mt-5 mb-5">
         <img src="./img/stargray.png" alt="" class="img-fluid float-end grayimg">
         <h2 class="text-white fw-bold mb-3">
-          Frequently Ask <br><span>Question</span></h2>
+          Frequently Ask <br><span>Question</span>
+        </h2>
           <p class="fs-4 text-white"> We got answers to the questions that you might
             want to ask about getlinked Hackathon 1.0
           </p>
@@ -197,174 +202,195 @@
     </div>
   </div>
 
-  <!-- Timeline  -->
-  <div class="timeline" id="timeline">
-    <section class="text-center p-4">
-        <h2 class="time">Timeline</h2>
-        <div class="my-3">
-            <h6 class="time-h6">Here is the breakdown of the time we anticipate </h6>
-        <h6  class="time-h6">  using for the upcoming event.</h6>
-        </div>
-   </section>
+  <section class=" d-flex py-5 container flex-column justify-content-center align-items-center">
+    
+    <div style="width: 1233px; height: 1278px; position: relative" class="">
+      <h2 class=" fs-2 mt-5 fw-bold text-center clashdisplay">Timeline</h2>
+      <p class="fs-14 text-center">Here is the breakdown of the time we anticipate <br>using for the upcoming event.</p>
+      <div style="width: 137px; height: 0; left: 621px; top: 194px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      <div style="width: 86px; height: 0; left: 621px; top: 415px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      <div style="width: 86px; height: 0; left: 621px; top: 576px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      <div style="width: 86px; height: 0; left: 621px; top: 737px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      <div style="width: 86px; height: 0; left: 621px; top: 900px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      <div style="width: 86px; height: 0; left: 621px; top: 1061px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px #D434FE solid;"></div>
+      
+      <div class="" style="left: 27px; top: 315px; position: absolute;">
+        <h4 class="purple text-end fw-bold text-break">Hackathon Announcement</h4>
+        <p class="text-end text-break">The getlinked tech hackathon 1.0 is formally announced<br/>to the general public and teams begin to get ready to register</p>
+      </div>
+      
+      <div style="left: 139px; top: 645px; position: absolute;">
+        <h4 class="purple text-end fw-bold text--break">Teams Registration ends</h4>
+        <p class="text-end text-break">Interested Participants are no longer allowed to<br/>register</p>
+      </div>
 
+      <div style="left: 0; top: 979px; position: absolute;">
+        <h4 class="purple text-end fw-bold text-break">Getlinked Hackathon 1.0 Officially Begins</h4>
+        <p class="text-end text-break">Accepted teams can now proceed to build their<br/>groundbreaking skill-driven solutions</p>
+      </div>
 
-   <section>
-            <div class="timelinegroup container d-flex justify-content-evenly " >
-                <div class="one "> 
-                    <img class="img-fluid star-one"  src="./star pur.png" alt="">
-                  <div class="hack-announce">
-                      <!--  -->
-                      <div class="tag-one text-end textEnd ">
-                        <h5>Hackathon Announcement</h5>
-                        <h6 class="h6">The getlinked tech hackathon 1.0 is formally announced</h6>
-                            <h6 class="h6"> to the general public and teams begin to get ready to register</h6>
-                    </div>
-                    <!--  -->
-                    <div class="nov-1 text-end textEnd ">
-                        <h5>November 18, 2023</h5>
-                        
-                    </div>
-                  </div>
-                    <!--  -->
+      <div style="left: 747px; top: 491px; position: absolute">
+        <h4 class="purple fw-bold text-break">Teams Registration begins</h4>
+        <p class="text text-break">Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register</p>
+      </div>
 
-                    <div class="nov-2 text-end textEnd switch-ends">
-                        <h5>Teams Registration ends</h5>
-                            <h6 class="h6">Interested Participants are no longer Allowed to</h6>
-                                <h6 class="h6">  register</h6>
-                    </div>
-                    <!--  -->
-                    <div class="nov-3 text-end textEnd switch-ends-date">
-                        <h5>November 18, 2023 </h5>
+      <div style="left: 747px; top: 813px; position: absolute;">
+        <h4 class="purple fw-bold text-break">Announcement of the accepted teams and ideas</h4>
+        <p class="text text-break">All teams whom idea has been accepted into getlinked tech <br/>hackathon 1.0 2023 are formally announced</p>
 
-                    </div>
-                    <!--  -->
-                    <div class="nov-4 text-end textEnd officallyb-switch">
-                        <h5>Getlinked Hackathon 1.0 Offically Begins</h5>
-                        <h6 class="h6">Accepted teams can now proceed to build their</h6>
-                        <h6 class="h6">   ground breaking skill driven solutions</h6>
-                    </div>
-                    <!--  -->
-                    <div class="nov-5 d-flex- justify-content-around-">
-                        <!-- <img src="./star grey (2).png" alt=""> -->
-                        <h5 class="text-end textEnd switch-rep-date">November 18, 2023</h5>
-                        
-                </div>
+      </div>
+      <div style="left: 747px; top: 1132px; position: absolute;">
+        <h4 class="purple fw-bold text-break">Demo Day</h4>
+        <p class="text text-break">Teams get the opportunity to pitch their projects to judges. <br/>The winner of the hackathon will also be announced on this day</p>
+      </div>
 
-            </div>
-                <div class="">
-                    <section class="line-container">
-                        <div class="timelines">
-                            <div class="line-one mx-3"></div>
-                        <div class="cricle mx-1 my-2">
-                            <p>1</p>
-                        </div>
-                        </div>
-                        <!--  -->
-                        <div class="timelines">
-                            <div class="line line-one-r mx-3"></div>
-                            <div class="cricle mx-1 my-2">
-                                <p>2</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="timelines">
-                            <div class="line line-one-r mx-3"></div>
-                        <div class="cricle mx-1 my-2">
-                            <p>3</p>
-                        </div>
-                        </div>
-                        <!--  -->
-                        <div class="timelines">
-                            <div class="line line-one-r mx-3"></div>
-                        <div class="cricle mx-1 my-2">
-                            <p>4</p> </div>
-                        </div>
-                            <!--  -->
-                            <div class="timelines">
-                                <div class="line line-one-r mx-3" ></div>
-                                <div class="cricle mx-1 my-2">
-                                    <p>5</p>
-                                </div>
-                            </div>
-                       <!--  -->
-                       <div class="timelines">
-                        <div class="line line-one-r mx-3"></div>
-                        <div class="cricle mx-1 my-2"><p>6</p></div>
-                       </div>
-                
-                    </section>
-                </div>
-                <div class="thirdcontainer ">
-                    <div class=" announce-switch-date">
-                        <h5 class="">November 18, 2023</h5>
-
-                    </div>
-                    <!--  -->
-                    <div class="team-1 switch-rep">
-                        <h5 >Teams Registration begins</h5>
-                        <h6 class="h6">Interested teams can now show their interest in the</h6>
-                        <h6 class="h6">   getlinked tech hackathon 1.0 2023 by proceeding to register</h6>
-                    </div>
-                    <!--  -->
-                    <div  class="star-bg">
-                       
-                        <div class="team-2 officallyb-switch-date">
-                            <h5>November 18, 2023</h5>
-                        </div>
-                      
-
-                    </div>
-                    <!--  -->
-                    <div class="team-3 announce-switch">
-                        <h5>Announcement of the accepted teams</h5>
-                        <h5>   and ideas</h5>
-                        <h6 class="h6">All teams whom idea has been accepted into getlinked tech</h6>
-                        <h6 class="h6">   hackathon 1.0 2023 are formally announced</h6>
-                    </div>
-            <!--  -->
-                    <div class="team-4">
-                        <h5 class="demo-switch-date">November 18, 2023</h5>
-                    </div>
-                    <!--  -->
-                   <div class="demo-switch">
-                    <div class="team-5">
-                        <h5>Demo Day</h5>
-                    </div>
-                    <!--  -->
-                    <div class="my-4">
-                        
-                        <h6 class="h6">Teams get the opportunity to pitch their projects to judges.</h6>
-                        <h6 class="h6">  The winner of the hackathon will also be announced on</h6>
-                        <h6 class="h6">  this day</h6>
-                    </div>
-                   </div>
-                    <!--  -->
-                </div>
-            </div>
-   </section>
-</div>     
-
-
-  <section class="h-100 partners-section py-5 px-4 px-lg-5 text-white d-flex align-items-center justify-center flex-column">
-    <h2 class="clashdisplay mt-0 mt-lg-5 fw-bold fs-2 fs-20 text-center">Partners and Sponsors</h2>
-    <p class="fs-14  fs-12 partners-text my-4 text-center">Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
-    <img class="img-fluid pt-lg-3 mb-5" src="img/Partner and sponsors section.png" alt="partners">  
+      <!-- <div style="left: 74px; top: 356px; position: absolute; text-align: right; color: white; font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 23.93; word-wrap: break-word;">The getlinked tech hackathon 1.0 is formally announced<br/>to the general public and teams begin to get ready to register</div> -->
+      <!-- <div style="left: 747px; top: 532px; position: absolute; color: white; font-size: 16px; font-family: 'Montserrat'; font-weight: 400; line-height: 27.34; word-wrap: break-word;">Interested teams can now show their interest in the<br/>getlinked tech hackathon 1.0 2023 by proceeding to register</div> -->
+      <!-- <div style="left: 122px; top: 686px; position: absolute; text-align: right; color: white; font-size: 16px; font-family: 'Montserrat'; font-weight: 400; line-height: 27.34; word-wrap: break-word;">Interested Participants are no longer allowed to<br/>register</div> -->
+      <!-- <div style="left: 124px; top: 1020px; position: absolute; text-align: right; color: white; font-size: 16px; font-family: 'Montserrat'; font-weight: 400; line-height: 27.34; word-wrap: break-word;">Accepted teams can now proceed to build their<br/>groundbreaking skill-driven solutions</div> -->
+      <!-- <div style="left: 747px; top: 878px; position: absolute; color: white; font-size: 16px; font-family: 'Montserrat'; font-weight: 400; line-height: 27.34; word-wrap: break-word;">All teams whose idea has been accepted into the getlinked tech<br/>hackathon 1.0 2023 are formally announced</div> -->
+      <!-- <div style="left: 747px; top: 1197px; position: absolute; color: white; font-size: 16px; font-family: 'Montserrat'; font-weight: 400; line-height: 27.34; word-wrap: break-word;">Teams get the   to pitch their projects to judges.<br/>The winner of the hackathon will also be announced on<br/>this day</div> -->
+      <div style="left: 747px; top: 360px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      <div style="left: 274px; top: 524px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      <div style="left: 747px; top: 693px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      <div style="left: 747px; top: 1013px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      <div style="left: 274px; top: 846px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      <div style="left: 274px; top: 1175px; position: absolute; color: #D434FE; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">November 18, 2023</div>
+      
+      <div style="width: 53px; height: 53px; left: 590px; top: 342px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 21px; top: 12px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">1</div>
+      </div>
+      <div style="width: 53px; height: 53px; left: 590px; top: 512px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 21px; top: 12px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">2</div>
+      </div>
+      <div style="width: 53px; height: 53px; left: 590px; top: 673px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 21px; top: 12px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">3</div>
+      </div>
+      <div style="width: 53px; height: 53px; left: 590px; top: 834px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 21px; top: 12px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">4</div>
+      </div>
+      <div style="width: 53px; height: 53px; left: 590px; top: 997px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 20px; top: 11px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">5</div>
+      </div>
+      <div style="width: 53px; height: 53px; left: 590px; top: 1158px; position: absolute;">
+        <div style="width: 53px; height: 53px; left: 0; top: 0; position: absolute; background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%); border-radius: 26.50px;"></div>
+        <div style="left: 20px; top: 11px; position: absolute; color: white; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; word-wrap: break-word;">6</div>
+      </div>
+      <img class="img-fluid" style="width: 26px; height: 32px; left: 38px; top: 1172px; position: absolute;" src="img/stargray.png" />
+      <img style="width: 26px; height: 32px; left: 1081px; top: 662px; position: absolute;" src="img/star (1).png" />
+      <img style="width: 30px; height: 36px; left: 229px; top: 194px; position: absolute; transform: rotate(180deg); transform-origin: 0 0;" src="./img/starpurple.png" />
+    </div>
   </section>
 
   <section>
+    <img src="./img/prizes.svg" class="img-fluid object-fit" alt="">
+  </section>
+
+  <section class="h-100 partners-section fs-14 py-5 px-4 px-lg-5 text-white d-flex align-items-center justify-center flex-column">
+    <h2 class="clashdisplay mt-0 mt-lg-5 fw-bold fs-2 fs-20 text-center">Partners and Sponsors</h2>
+    <p class="fs-14 fs-12 partners-text my-4 text-center">Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
+    <img class="img-fluid pt-lg-3 mb-5" src="img/Partner and sponsors section.png" alt="partners">  
+  </section>
+  <hr class="text-white line text-opacity-50">
+  <section class="privacy-section fs-14 fs-12 h-100 py-5 px-4 px-lg-5">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+      <div class=" d-flex flex-column flex-md-row align-items-center">
+        <div class="col z-1 position-relative py-5 py-md-0 d-flex flex-column text-center text-md-start align-items-center align-items-md-start">
           <h3 class="text-white fs-2 fs-20 clashdisplay mb-3">Privacy Policy and <br>
             <span>Terms</span>
           </h3>
           <p class="text-white text-opacity-75">Last updated on September 12, 2023</p>
-          <p class="text-white my-3 ">Below are our privacy & policy, which outline a lot of goodies. it’s our aim to always take of our participant</p>
+          <p class="text-white mt-3 mb-4 privacy-p">Below are our privacy & policy, which outline a lot of goodies. it’s our aim to always take of our participant</p>
+          
+          <div class="container w-100 p-5 border-purple">
+            <p class="mb-4">At getlinked tech Hackathon 1.0, we value your privacy and are committed to protecting your personal information. <br>
+              This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you participate in our tech hackathon event. By participating in our event, you consent to the practices described in this policy.</p>
+            <h6 class="fs-6 fw-bold mb-0"><span>Licensing Policy</span></h6>
+            <p class="fw-bold mb-3">Here are terms of our Standard License:</p>
+            <div>
+              <ul class="ul-none mb-1">
+                <li class="d-flex align-items-start ">
+                  <img class="me-2 mt-1" src="./img/list terms.svg" alt="list icon">
+                  <p>The Standard License grants you a non-exclusive right to navigate and register for our event</p>
+                </li>
+                <li class="d-flex align-items-start ">
+                  <img class="me-2 mt-1" src="./img/list terms.svg" alt="list icon">
+                  <p>You are licensed to use the item available at any free source sites, for your project developement</p>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button class="gradient px-5 py-3 text-white mb-1 rounded border border-0">Read More</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col z-0 position-relative mb-5 ">
+          <img class="img-fluid" src="./img/privacy_policy.svg" alt="">
         </div>
       </div> 
     </div>
   
   </section>
+
+  <footer class="px-3 py-3 footer-bg-color h-100">
+    <div class="position-relative container-md h-100 d-flex align-items-center justify-content-center">
+      <div class="position-absolute z-0">
+        <img class="img-fluid" src="./img/footer-stars-bg.svg" alt="">
+      </div>
+      <div class="position-relative px-3 px-md-5 z-2 h-100 ">
+        <div class="footer-box fs-12 d-flex h-100  align-items-center justify-content-center flex-column">
+          <div class="footer-content pt-5 mb-4 d-flex flex-md-row flex-column gap-md-4 justify-content-between">
+            <div class="col-sm-6  text-start">
+              <h2 class="clashdisplay fw-bold fs-30 fs-20">get<span>linked</span></h2>
+              <p class="mb-5 w-70">Getlinked Tech Hackathon is a technology innovation program 
+                established by a group of organizations with the aim of showcasing 
+                young and talented individuals in the field of technology
+              </p>
+              <p class="d-flex align-items-center mb-4 mb-md-0"><a class="text-decoration-none" href="">Terms of Use</a><span class="mx-2 fs-18">|</span><a class="text-decoration-none" href="">Privacy Policy</a></p>
+            </div>
+            <div class="col-sm-6 gap-3 mt-2 mt-md-0 d-flex flex-column flex-md-row justify-content-between align-items-between">
+              <div class="mb-5 mb-md-0">
+                <h4 class="fs-14 fw-semibold"><span>Useful Links</span></h4>
+                <p>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a class="text-decoration-none" href="#" target="_blank">Overview</a></li>
+                    <li class="mb-2"><a class="text-decoration-none" href="#" target="_blank">Timeline</a></li>
+                    <li class="mb-2"><a class="text-decoration-none" href="#FAQs" target="_blank">FAQs</a></li>
+                    <li class="mb-2"><a class="text-decoration-none" href="#" target="_blank">Register</a></li>
+                    <li class="d-flex align-items-center"><span class="me-3">Follow us</span>
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="http://"><img src="./img/mdi-instagram.svg" alt="instagram"></a>
+                        <a href="http://"><img src="./img/x_twitter.svg" alt="x(twitter)"></a>
+                        <a href="http://"><img src="./img/facebook.svg" alt="facebook"></a>
+                        <a href="http://"><img src="./img/ri-linkedin-fill.svg" alt="linkedin"></a>
+                      </div>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+              <div>
+                <h4 class="fs-14 fw-semibold mb-2 mb-md-3"><span>Contact Us</span></h4>
+                <p>
+                  <ul class="list-unstyled">
+                    <li class="my-2 mb-3"><a class="text-decoration-none" href="tel:+234 6707653444"><img class="me-3" src="./img/call.svg" alt="call icon">+234 6707653444</a></li>
+                    <li  class="my-3 d-flex align-items-start"> <img class="me-3" src="./img/location.svg" alt="location icon"><p><a class="text-decoration-none" href="https://maps.app.goo.gl/c5dHLui6rxt949Lb8">27,Alara Street <br>Yaba 100012 <br>Lagos State</a></p></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-3 text-center">All rights reserved. © getlinked Ltd.</div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
