@@ -9,6 +9,7 @@ body{
 .pg-color{
     color:  #D434FE;
 }
+
 .prize-starbg {
     background: url("./images/testimonal-bg.png");
     background-repeat: no-repeat;
@@ -44,7 +45,7 @@ body{
 }
 .prize-p{
     text-align: center;
-    width: ;
+    /* width: ; */
     margin-left:150px ;
 }
     
@@ -56,7 +57,7 @@ body{
     }
     .prize-p{
         text-align: center;
-        width: ;
+        /* width: ; */
         margin-left:0px ;
     }
 }
